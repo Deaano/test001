@@ -224,9 +224,7 @@
 }
 
 /*------------------------------------------------- Hero ------------------------------------------------------- */
-.hero-conatainer{
-    height: ;
-}
+
 .main-hero{
     width: 80%;
     margin: 50px 10%;
@@ -279,14 +277,19 @@
     .main-hero{
         height:290px;
         width: 100%;
-        margin-left: 0;      
+        margin: 0;      
+    }
+
+    .hero-container{
+        margin-top: 30px;
+        margin-bottom: 17px;
     }
 }
 
 @media  screen and (max-width:425px){
     .main-hero{
         height:250px;
-       margin-top: 30px;
+       
         
     }
 }
@@ -316,7 +319,7 @@
     background: rgb(8, 108, 8);
     margin: auto;
     margin-top: -10px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
 }
 
 .top-rated-title{
@@ -335,9 +338,7 @@
        
     }
 
-    .title-container hr{
-        margin-bottom: 38px;
-    }
+   
 }
 
 @media screen and (max-width:340px) {
@@ -554,7 +555,8 @@
 
     @media screen and (max-width:450px) {
         .card-container{
-            width: 169px;
+            width: 44vw;
+            gap: 0;
         }
 
         .card{
@@ -568,7 +570,8 @@
 
     @media screen and (max-width:395px) {
         .card-container{
-            width: 145px;
+            width: 44vw;
+            gap: 2px;
         }
 
         .card{
@@ -592,7 +595,7 @@
 
       @media screen and (max-width:340px) {
         .card-container{
-            width: 125px;
+            
             padding: 0;
         }
 
@@ -1083,7 +1086,7 @@
     @media screen and (max-width:550px) {
         .category-container{
             grid-template-columns: 1fr;
-            margin-top: 10px;
+            margin-top: 30px;
         }
 
         .category-card{
@@ -1196,8 +1199,8 @@
     }
 
      @media screen and (max-width:375px) {
-        .product-container{
-            margin-left: -32px;
+        .products{
+            margin: 0;
         }
 
         .product-container{
@@ -1263,7 +1266,10 @@
 
 
 
-
+.blog-title-page{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
 
     .blog-title-container{
@@ -1292,14 +1298,20 @@
     transition: 0.6s;
 }
 
+@media screen and (max-width:850px) {
+    .blog-title{
+        font-size: 18px;
+    }
+}
+
 
 @media screen and (max-width:445px) {
     .blog-title-container{
         width: 88%;
     }
 
-    .blog-title-container h2{
-        font-size: 19px;
+    .blog-title{
+        font-size: 16px;
     }
 
     .blog-title-container:hover{
