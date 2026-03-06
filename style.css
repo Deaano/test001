@@ -479,7 +479,7 @@
 
     @media screen and (max-width:350px) {
         .search-by-product{
-            left: 15vw;
+            left: 17.5vw;
         }
     }
 
@@ -495,7 +495,7 @@
             width: 80vw;
             
         }
-    }
+    } 
 
 /*------------------------------------------------- Hero ------------------------------------------------------- */
 
@@ -907,7 +907,7 @@
 
 .hero-two-container a{
     position: relative;
-    bottom: 190px;
+    bottom: 180px;
     padding: 25px 75px;
     left: 11.7vw;
     text-decoration: none;
@@ -921,62 +921,68 @@
     
 }
 
-.mustSeeBtn:hover{
+.hero-two-container a:hover{
     background: white;
     border: 5px solid rgb(182, 234, 177);
     color: rgb(182, 234, 177);
 }
 
+@media screen and (max-width:1200px) {
+    .hero-two-container a{
+        bottom: 155px;
+    }
+}
 @media screen and (max-width:1020px) {
-    .mustSeeBtn{
-        bottom: 108px;
+    .hero-two-container a{
+        bottom: 135px;
     }
 }
 
 @media screen and (max-width:960px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 18.5px 60px;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width:840px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 17px 57.5px;
         font-size: 18.5px;
-        bottom: 95px;
+        bottom: 120px;
     }
 }
 
 @media screen and (max-width:700px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 15px 53.5px;
         font-size: 16.5px;
-        bottom: 84px;
+        bottom: 115px;
     }
 }
 
 @media screen and (max-width:620px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 12px 46.5px;
         font-size: 14.5px;
-        bottom: 86px;
+        bottom: 110px;
     }
+
 }
 
 @media screen and (max-width:550px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 12px 36.5px;
         font-size: 12.5px;
-        bottom: 86px;
+        bottom: 105px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .mustSeeBtn{
+    .hero-two-container a{
         padding: 8px 25.5px;
         font-size: 11.5px;
-        bottom: 86px;
+        bottom: 115px;
         left: 6.2vw;
     }
 
@@ -987,17 +993,22 @@
     }
 }
 
+@media screen and (max-width:456px) {
+    .hero-two-container a{
+        bottom: 100px;
+    }
+}
 @media screen and (max-width:410px) {
-    .mustSeeBtn{
-        bottom: 76px;
+    .hero-two-container a{
+        bottom: 90px;
     }
 }
 
 @media screen and (max-width:390px) {
-    .mustSeeBtn{
+    .hero-two-container a{
        padding: 6px 22px;
        font-size: 10px;
-       
+       bottom: 85px;
     }
 }
 
@@ -1480,11 +1491,10 @@
         
     }
 
-      @media screen and (max-width:375px) {
-        .product-container{
-            margin-left: -20px;
+      @media screen and (max-width:440px) {
+        .banner{
+            margin-top: 55px;
         }
-
       
     }
 
@@ -1495,6 +1505,7 @@
 
         .product-container{
             margin-top: 50px;
+            margin-left: -20px;
         }
     }
 
