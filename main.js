@@ -83,7 +83,7 @@ function mapProducts() {
   const productCard = document.querySelector('.products')
   if(!productCard) return;
 
-   Product.filter(product => product.category === category)
+  Product.filter(product => product.category === category  || product.filterCat === category)
     .forEach(Product => {
       productCard.innerHTML +=
       ` <div class='card-container'>
@@ -114,6 +114,7 @@ function mapProducts() {
 
  mapProducts();
 
+
  function mapBanners() {
 
   const  params = new URLSearchParams(window.location.search);
@@ -122,7 +123,7 @@ function mapProducts() {
   const banner = document.querySelector('.banner-container')
   if(!banner) return;
 
-   banners.filter(banners => banners.category === category || banners.category2 === category  ||  banners.category3 === category  || banners.category4 === category ||  banners.category3 === category  || banners.category5 === category )
+   banners.filter(banners => banners.category === category  || banners.filterCat === category  || banners.filterCat2 === category  || banners.filterCat3 === category  || banners.filterCat4 === category  )
     .forEach(banners => {
       banner.innerHTML +=
       ` 
@@ -134,39 +135,13 @@ function mapProducts() {
 
  mapBanners();
 
-  function filteredProductNav() {
 
-  const  params = new URLSearchParams(window.location.search);
-  const category = params.get("category");
 
-  const filteredNav = document.querySelector('.filtered-products')
-  if(!filteredNav) return;
 
-  filteredNav.innerHTML = "";
 
-   
-    fNav.filter(nav => nav.category === category  || nav.fCategory1 === category || nav.fCategory2 === category || nav.fCategory3 === category || nav.fCategory4 === category || nav.fCategory5 === category)
-    .forEach(nav => {
 
-       for(let i = 0; i <= 5; i++){
 
-    const link = nav[`link${i}`];
 
-    const cat = nav[`fCategory${i}`];
-
-    if (link && cat){
-   
-      filteredNav.innerHTML +=
-      ` 
-      <a href="FilteredProducts.html?category=${cat}">${link}</a>
-               
-               
-   `;
-  }}});
-
-};
-
- filteredProductNav();
 
  function mapSeasonalProducts() {
 
@@ -317,3 +292,24 @@ function mapProducts() {
  };
 
  blogTitle();
+
+const searchByProduct = document.querySelector('.search-by-product');
+
+searchByProduct.addEventListener('click' , ()=> {
+  const container = document.querySelector('.hide');
+    container.classList.toggle('search-by-product-list-container');
+});
+
+const exitSearchByProduct = document.querySelector('.exit-search-by-product');
+
+exitSearchByProduct.addEventListener('click' , ()=> {
+  const container = document.querySelector('.hide');
+    container.classList.toggle('search-by-product-list-container');
+});
+
+const searchByProductLink = document.querySelector('.search-link');
+
+searchByProductLink.addEventListener('click' , ()=> {
+  const container = document.querySelector('.hide');
+    container.classList.toggle('search-by-product-list-container');
+});

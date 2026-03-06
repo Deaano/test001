@@ -25,7 +25,7 @@ const SeasonalProduct = [{
     rating:5,
     description:'`10 x 8` Inflatable Tent for Camping, 6-8 People Blow up Tent, 4 Season Inflatable House with Stove Jack',
     price:'£727.44',
-    category:'Birthdays',
+    category:'ValentinesDay',
     button:'Check It Out',
 },
 
