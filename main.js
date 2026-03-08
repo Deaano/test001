@@ -202,47 +202,47 @@ function mapProducts() {
 
      <div>
      <h3>${post.subtitle1}</h3>
-     <p>${post.paragraph1}</p>
+     <p class='blog-paragraph'>${post.paragraph1}</p>
      </div>
 
      <div>
      <h3>${post.subtitle2}</h3>
-     <p>${post.paragraph3}</p>
+     <p class='blog-paragraph'>${post.paragraph3}</p>
      </div>
 
      <div>
      <h3>${post.subtitle3}</h3>
-     <p>${post.paragraph3}</p>
+     <p class='blog-paragraph'>${post.paragraph3}</p>
      </div>
 
      <div>
      <h3>${post.subtitle4}</h3>
-     <p>${post.paragraph4}</p>
+     <p class='blog-paragraph'>${post.paragraph4}</p>
      </div>
 
      <div>
      <h3>${post.subtitle5}</h3>
-     <p>${post.paragraph5}</p>
+     <p class='blog-paragraph'>${post.paragraph5}</p>
      </div>
 
      <div>
      <h3>${post.subtitle6}</h3>
-     <p>${post.paragraph6}</p>
+     <p class='blog-paragraph'>${post.paragraph6}</p>
      </div>
 
      <div>
      <h3>${post.subtitle7}</h3>
-     <p>${post.paragraph7}</p>
+     <p class='blog-paragraph'>${post.paragraph7}</p>
      </div>
 
      <div>
      <h3>${post.subtitle8}</h3>
-     <p>${post.paragraph8}</p>
+     <p class='blog-paragraph'>${post.paragraph8}</p>
      </div>
    
      <div>
      <h3>${post.subtitle9}</h3>
-     <p>${post.paragraph9}</p>
+     <p class='blog-paragraph'>${post.paragraph9}</p>
      </div>
      
 <div class='blog-card-container'>

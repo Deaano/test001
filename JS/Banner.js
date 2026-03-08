@@ -11,7 +11,7 @@ const banners = [{
     bannerImg:'../Images/lawnmowerBanner.png',
     category:'Lawnmowers',
     
-    ffilterCat:'Strimmers',
+    filterCat:'Strimmers',
     filterCat2:'AutomatedLawnmowers',
     filterCat3:'',
 },{
@@ -42,8 +42,8 @@ const banners = [{
     id:6,
     bannerImg:'../Images/gazeboBanner.png',
     category:'Gazebos',
-    filterCat:'PopUp',
-    filterCat2:'SteelFramed',
+    filterCat:'PopUpGazebos',
+    filterCat2:'SteelFramedGazebos',
 },{
     id:7,
     bannerImg:'../Images/greenHouseBanner.png',
@@ -71,8 +71,8 @@ const banners = [{
     bannerImg:'../Images/TrampolineBanner.png',
     category:'Trampolines',
     filterCat:'IndoorTrampolines',
-    filterCat2:'6-8ft',
-    filterCat3:'10-12ft',   
+    filterCat2:'6-8ftTrampolines',
+    filterCat3:'10-12ftTrampolines',   
 },{
     id:11,
     bannerImg:'../Images/gardenToolsBanner.png',
@@ -100,22 +100,26 @@ const banners = [{
     id:14,
     bannerImg:'../Images/motherdayBanner.png',
     category:'MothersDay',
-    filterCat:'MothersDayGifts',
-    filterCat2:'MothersDayFlowers',
+    filterCat:'MothersDaySlippers',
+    filterCat2:'MothersDayPajarmas',
+    filterCat3:'MothersDayJewellery',
+    filterCat4:'MotherDayGifts',
         
 },{
     id:15,
     bannerImg:'../Images/fatherdayBanner.png',
     category:'FathersDay',
-    filterCat:'FathersDayGifts',
-    filterCat2:'FathersDayFlowers',
+    filterCat:'FatherDayGifts',
+    filterCat2:'FathersDaySlippers',
+    filterCat3:'FathersDayJewellery',
+    filterCat4:'FathersDayPajarmas',
         
 },{
     id:16,
     bannerImg:'../Images/holidayEssentialsBanner.png',
     category:'HolidayEssentials',
     filterCat:'SunGlasses',
-    filterCat2:'SandalsAndSliders',
+    filterCat2:'SlidersAndSandals',
     filterCat3:'MensBeachWear',
     filterCat4:'WomensBeachWear',
         
@@ -124,7 +128,7 @@ const banners = [{
     bannerImg:'../Images/campingBanner.png',
     category:'Camping',
     filterCat:'2-6ManTents',
-    filterCat2:'8ManPlus',
+    filterCat2:'8ManPlusTents',
     filterCat3:'CampingEquipment',
     filterCat4:'Glamping',
         
@@ -132,8 +136,9 @@ const banners = [{
     id:17,
     bannerImg:'../Images/roofboxBanner.png',
     category:'Roofboxes',
-    filterCat:'RoofBag',
+    filterCat:'RoofBags',
     filterCat2:'RoofBoxes',
+    filterCat3:'RoofBars',
 },{
     id:18,
     bannerImg:'../Images/acUnitBanner.png',
@@ -146,8 +151,8 @@ const banners = [{
     id:19,
     bannerImg:'../Images/halloweenBanner.png',
     category:'HalloweenDecorations',
-    filterCat:'HalloweenIndoors',
-    filterCat2:'HalloweenOutdoors',
+    filterCat:'HalloweenIndoorDecs',
+    filterCat2:'HalloweenOutdoorDecs',
 },{
     id:20,
     bannerImg:'../Images/mensWinterClothesBanner.png',
@@ -167,9 +172,11 @@ const banners = [{
 },{
     id:22,
     bannerImg:'../Images/christmasBanner.png',
-    category:'ChristmasDecorations',
-    filterCat:'XmasIndoorDecorations',
-    filterCat2:'XmasOutdoorDecorations',
+    category:'AllChristmasDecorations',
+    filterCat:'ChristmasDecorations',
+    filterCat2:'ChristmasOutdoorDecorations',
+    filterCat3:'ChristmasTrees',
+    filterCat3:'ChristmasLights',
 },{
     id:23,
     bannerImg:'../Images/gardenShedBanner.png',
