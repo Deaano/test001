@@ -14,7 +14,7 @@ const topRatedProduct = [{
     category:'topRated',
     description:'Makita DLM532Z Twin 18V (36V) Li-ion LXT 53cm Brushless Lawn Mower - Batteries and Charger Not Included',
     price:'£901.05',
-     button:'Check It Out',
+    button:'Check It Out',
 },
 {
     id:3,

@@ -14,7 +14,7 @@ const SeasonalProduct = [{
     id:2,
     image:'../Images/topRatedRobotLawnmower.webp',
     rating:5,
-    description:'lawnmower DLM532Z Twin 18V (36V) Li-ion LXT 53cm Brushless Lawn Mower ',
+    description:'valentines DLM532Z Twin 18V (36V) Li-ion LXT 53cm Brushless Lawn Mower ',
     price:'£901.05',
     category:'ValentinesDayForHim',
     button:'Check It Out',

@@ -73,7 +73,10 @@
     });
  };
 
- highlyRecommendedProductContainer()
+ highlyRecommendedProductContainer();
+ 
+ 
+
 
 function mapProducts() {
 
@@ -181,6 +184,46 @@ function mapProducts() {
  };
 
  mapSeasonalProducts();
+
+  function mapSearchedProducts() {
+
+  const  params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  const searchedDisplay = document.querySelector('.searched-product-container');
+    if(!searchedDisplay) return;
+
+    const sProduct = Product.find( product => product.id == id )
+
+    searchedDisplay.innerHTML = `
+    <div class='card-container'>
+              <div class='card'>
+                
+                <div class="card-img-container">
+                  <img src=${sProduct.image} alt=""/> 
+                </div>
+
+                <div class="card-description">
+                  <p>${sProduct.description}</p>
+                </div>
+
+                <div class="card-price">
+                  <p>${sProduct.price}</p>
+                </div>                
+              </div>
+                <div class="check-it-out-btn-container">
+                  <a class="check-it-out-btn">${sProduct.button}</a>
+                </div>
+              
+              
+
+            </div>
+    `
+  
+  };
+;
+
+ mapSearchedProducts();
 
 
   function blogTitle () {
@@ -294,22 +337,52 @@ function mapProducts() {
  blogTitle();
 
 const searchByProduct = document.querySelector('.search-by-product');
-
+if(searchByProduct){
 searchByProduct.addEventListener('click' , ()=> {
   const container = document.querySelector('.hide');
     container.classList.toggle('search-by-product-list-container');
 });
-
+}
 const exitSearchByProduct = document.querySelector('.exit-search-by-product');
 
+if(exitSearchByProduct){
 exitSearchByProduct.addEventListener('click' , ()=> {
   const container = document.querySelector('.hide');
     container.classList.toggle('search-by-product-list-container');
 });
+}
+
 
 const searchByProductLink = document.querySelector('.search-link');
 
+if(searchByProductLink){
 searchByProductLink.addEventListener('click' , ()=> {
   const container = document.querySelector('.hide');
     container.classList.toggle('search-by-product-list-container');
 });
+}
+
+const searchInput = document.querySelector('#searchInput');
+const resultsBox = document.querySelector('#searchResults');
+
+
+const searchAllInput = document.getElementById("searchInput");
+
+if(searchAllInput){
+
+searchAllInput.addEventListener("keydown", function(e){
+
+if(e.key === "Enter"){
+
+const searchValue = searchAllInput.value.trim();
+
+if(searchValue !== ""){
+window.location.href =
+`product.html?search=${encodeURIComponent(searchValue)}`;
+}
+
+}
+
+});
+
+}
