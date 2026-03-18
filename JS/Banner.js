@@ -1,7 +1,7 @@
 const banners = [{
     id:1,
     bannerImg:'../Images/BBQBanner.png',
-    category:'BBQ',
+    category:'bbq',
     filterCat:'GasBBQ',
     filterCat2:'BBQUtensils',
     filterCat3:'CharcoalBBQ',
@@ -13,7 +13,7 @@ const banners = [{
     
     filterCat:'Strimmers',
     filterCat2:'AutomatedLawnmowers',
-    filterCat3:'',
+    filterCat3:'Lawnmower',
 },{
     id:3,
     bannerImg:'../Images/gardenFurnitureBanner.png',
@@ -33,7 +33,7 @@ const banners = [{
 },{
     id:5,
     bannerImg:'../Images/swimmingPoolsBanner.png',
-    category:'SwimmingPools',
+    category:'SwimmingPool',
     filterCat:'SwimmingPools',
     filterCat2:'HotTubs',
     filterCat3:'PaddlingPools',

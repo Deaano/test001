@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Grill And Grove</title>
+
     <link rel="stylesheet" href="../style.css" />
+    <title>Grill And Grove</title>
   </head>
   <body>
     <div class="nav">
@@ -208,6 +209,8 @@
       <div id="searchResults" class="search-results"></div>
     </div>
 
+    <div class="filtered-products"></div>
+
     <div class="banner-container"></div>
 
     <div class="products"></div>
@@ -233,5 +236,53 @@
     <script src="../JS/AllProducts.js"></script>
     <script src="../JS/mainCategoryProduct.js"></script>
     <script src="../main.js"></script>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const searchValue = params.get("search");
+
+      const container = document.querySelector(".products");
+
+      function mapProducts(products) {
+        container.innerHTML = "";
+
+        products.forEach((product) => {
+          container.innerHTML += `
+<div class='card-container'>
+              <div class='card'>
+
+                <div class="card-img-container">
+                  <img src=${product.image} alt=""/> 
+                </div>
+
+                <div class="card-description">
+                  <p>${product.description}</p>
+                </div>
+
+                <div class="card-price">
+                  <p>${product.price}</p>
+                </div>                
+               </div>
+                <div class="check-it-out-btn-container">
+                  <a class="check-it-out-btn">${product.button}</a>
+                </div>
+              
+             
+
+            </div>
+`;
+        });
+      }
+
+      if (searchValue) {
+        const filteredProducts = AllProduct.filter((product) =>
+          product.searchIndex.includes(searchValue.toLowerCase()),
+        );
+
+        mapProducts(filteredProducts);
+      } else {
+        mapProducts(AllProduct);
+      }
+    </script>
   </body>
 </html>

@@ -8,14 +8,14 @@ const fNav = [{
     
     category:'Lawnmowers',
 
-    fCategory1:'Lawnmowers',
+    fCategory1:'Lawnmower',
     fCategory2:'Strimmers',
     fCategory3:'AutomatedLawnmowers',    
 },{
     id:2,
     link1:'Gas BBQs',
     link2:'Charcoal BBQs',
-    link3:'Utensils',
+    link3:'BBQUtensils',
     
     category:'BBQ',
 
@@ -57,7 +57,7 @@ const fNav = [{
     
     category:'SwimmingPools',
 
-    fCategory1:'SwimmingPools',
+    fCategory1:'SwimmingPool',
     fCategory2:'HotTubs',
     fCategory3:'PaddlingPools',
     fCategory4:'PoolsForPets',    

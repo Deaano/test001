@@ -24,7 +24,7 @@
                 </div>                
               </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${TopRatedProduct.button}</a>
+                  <a class="check-it-out-btn" href=${TopRatedProduct.link}>${TopRatedProduct.button}</a>
                 </div>
               
               
@@ -63,7 +63,7 @@
                 </div>                
               </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${highlyRecommendedProduct.button}</a>
+                  <a class="check-it-out-btn" href=${highlyRecommendedProduct.link}>${highlyRecommendedProduct.button}</a>
                 </div>
               
               
@@ -105,7 +105,7 @@ function mapProducts() {
                 </div>                
                </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${Product.button}</a>
+                  <a class="check-it-out-btn" href=${Product.link}>${Product.button}</a>
                 </div>
               
              
@@ -173,7 +173,7 @@ function mapProducts() {
                 </div>                
               </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${Product.button}</a>
+                  <a class="check-it-out-btn" href=${Product.link}}>${Product.button}</a>
                 </div>
               
               
@@ -212,7 +212,7 @@ function mapProducts() {
                 </div>                
               </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${sProduct.button}</a>
+                  <a class="check-it-out-btn" href=${sProduct.link}>${sProduct.button}</a>
                 </div>
               
               
@@ -305,7 +305,7 @@ function mapProducts() {
                 </div>                
                </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${post.card1button}</a>
+                  <a class="check-it-out-btn" href=${post.bloglink1}>${post.card1button}</a>
                 </div>
           </div>
           <div class='seperate-card'>
@@ -324,7 +324,7 @@ function mapProducts() {
                 </div>                
                </div>
                 <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${post.card2button}</a>
+                  <a class="check-it-out-btn" href=${post.bloglink2}>${post.card2button}</a>
                 </div>
               </div>
              
@@ -378,7 +378,7 @@ const searchValue = searchAllInput.value.trim();
 
 if(searchValue !== ""){
 window.location.href =
-`product.html?search=${encodeURIComponent(searchValue)}`;
+`SearchedProducts.html?search=${encodeURIComponent(searchValue)}`;
 }
 
 }

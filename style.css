@@ -679,7 +679,9 @@
 .card-img-container img{
     width: 100%;
     max-height: 230px;
-    min-height: 180px;
+    
+    max-width: fit-content;
+   
 }
 
 .card-description{
@@ -694,6 +696,8 @@
 
 .card-price{    
     margin-bottom: 30px;
+    margin-top: 18px;
+    font-weight: 600;
 }
 
 /*     Card Link Button                                              */
@@ -716,6 +720,10 @@
     cursor: pointer;
     border-radius: 3px;
     font-weight: 600;
+}
+
+.check-it-out-btn-container a{
+    text-decoration: none;
 }
 
 .check-it-out-btn:hover{

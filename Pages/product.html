@@ -63,7 +63,7 @@
               ><li class="search-link">BBQ Utensils</li></a
             >
             <h3 class="search-link-header">Lawnmowers</h3>
-            <a href="FilteredProducts.html?category=Lawnmowers"
+            <a href="FilteredProducts.html?category=Lawnmower"
               ><li class="search-link">Lawnmowers</li></a
             >
             <a href="FilteredProducts.html?category=Strimmers"
@@ -86,9 +86,7 @@
               ><li class="search-link">Table And Chairs</li></a
             >
             <h3 class="search-link-header">Garden Lighting</h3>
-            <a href="FilteredProducts.html?category=SpotLights"
-              ><li class="search-link">Spot Lights</li></a
-            >
+
             <a href="FilteredProducts.html?category=WallLights"
               ><li class="search-link">Wall Lights</li></a
             >
@@ -103,7 +101,7 @@
         <div>
           <ul>
             <h3 class="search-link-header">Swimming Pools</h3>
-            <a href="FilteredProducts.html?category=SwimmingPools"
+            <a href="FilteredProducts.html?category=SwimmingPool"
               ><li class="search-link">Swimming Pools</li></a
             >
             <a href="FilteredProducts.html?category=HotTubs"
@@ -217,8 +215,6 @@
 
     <div class="products"></div>
 
-    <div class="products-container"></div>
-
     <div class="footer-container">
       <div class="footer-logo-title-container">
         <img src="../Images/leaf1.png" alt="" />
@@ -240,53 +236,5 @@
     <script src="../JS/AllProducts.js"></script>
     <script src="../JS/mainCategoryProduct.js"></script>
     <script src="../main.js"></script>
-
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      const searchValue = params.get("search");
-
-      const container = document.querySelector(".products");
-
-      function mapProducts(products) {
-        container.innerHTML = "";
-
-        products.forEach((product) => {
-          container.innerHTML += `
-<div class='card-container'>
-              <div class='card'>
-
-                <div class="card-img-container">
-                  <img src=${product.image} alt=""/> 
-                </div>
-
-                <div class="card-description">
-                  <p>${product.description}</p>
-                </div>
-
-                <div class="card-price">
-                  <p>${product.price}</p>
-                </div>                
-               </div>
-                <div class="check-it-out-btn-container">
-                  <a class="check-it-out-btn">${product.button}</a>
-                </div>
-              
-             
-
-            </div>
-`;
-        });
-      }
-
-      if (searchValue) {
-        const filteredProducts = AllProduct.filter((product) =>
-          product.searchIndex.includes(searchValue.toLowerCase()),
-        );
-
-        mapProducts(filteredProducts);
-      } else {
-        mapProducts(AllProduct);
-      }
-    </script>
   </body>
 </html>
